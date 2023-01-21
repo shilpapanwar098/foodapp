@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#item-card {
+  width: 250px;
+  height: 290px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgb(224, 93, 113);
+  cursor: pointer;
+  transition: 0.5s all step-end;
+}
+#item-card:hover img {
+  transform: scale(1.2);
+}
+
+#item-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.5s all ease-in-out;
+}
+#item-name {
+  margin: 5px 0;
+  font-weight: 600;
+  color: darkslategray;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+#item-price {
+  margin: 0;
+  color: rgb(2, 27, 27);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.addbutton {
+  padding: 15px 25px;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.addbutton:hover {
+  background-color: #3e8e41;
+}
+
+.addbutton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.cart-toggle {
+  display: none;
+}
+.cardItem-toggle {
+  display: block;
+}
+#cart-page {
+  background: white;
+  margin-right: 50px;
+  padding: 20px 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+#cart-title {
+  font-size: 35px;
+  margin: 0;
+  color: indianred;
+}
+#cart-page table {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+#cart-page table thead td {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.cart-btn {
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  bottom: 30px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+#cart-page table tbody td {
+  padding: 10px 0;
+  font-size: 20px;
+}
+#cart-page table tbody button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+  background: lightcoral;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+#cart-page table tbody img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.increase-item {
+  padding: 10px;
+}
+
+.decrease-item {
+  padding: 10px;
+}
+
+.goBack {
+  display: none;
+}
