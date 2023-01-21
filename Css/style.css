@@ -60,6 +60,15 @@
   box-shadow: 0 9px #999;
 }
 
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 .addbutton:hover {
   background-color: #3e8e41;
 }

@@ -35,28 +35,21 @@
   </head>
   <body class="bg-warning">
     <div class="row header align-items-center bg-white w-100 m-auto">
-      <div class="col-3 d-flex justify-content-between align-items-center">
+      <div class="col-4 d-flex justify-content-between align-items-center">
         <img
           src="/images/HomePageImages/logo.jpg"
           class="rounded-circle w-25"
           alt=""
         />
       </div>
-      <div class="col-6">
-        <input
-          type="search"
-          class="search-input"
-          style="width: 90%; height: 40px"
-        />
-        <i class="fa fa-search" style="font-size: 22px"></i>
-      </div>
-      <div class="col-3 d-flex justify-content-between align-items-center">
-        <a href="/index.html" class="text-decoration-none h5">Home</a>
-        <a href="/Html/products.html" class="h5 text-decoration-none">Menu</a>
+      
+      <div class="col-8 d-flex justify-content-end align-items-center">
+        <a href="/index.html" class="text-decoration-none h5" style="font-size: 18px; margin: auto 10px;">Home</a>
+        <a href="/Html/products.html" class="h5 text-decoration-none" style="font-size: 18px; margin: auto 10px;">Menu</a>
 
         <i
           class="fa fa-shopping-cart px-2 btn btn-success"
-          style="font-size: 35px"
+          style="font-size: 20px; margin: 10px;"
           id="orderCount"
         >
           0
@@ -64,7 +57,7 @@
       </div>
     </div>
 
-    >
+    
 
     <div class="row text-center">
       <div class="col" id="curries">
@@ -85,7 +78,7 @@
     </div>
 
     <div class="row" style="margin-top: 20px">
-      <div class="col-8 cart-toggle" id="cartDetails">
+      <div class="col-8 display-none" id="cartDetails">
         <div id="cart-page" class="mx-3">
           <h3 class="text-center bg-dark text-white p-2">Cart Items</h3>
           <table>
@@ -102,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4 cart-toggle" id="totalPayment">
+      <div class="col-4 display-none" id="totalPayment">
         <div id="checkout" class="card p-3 mx-3">
           <p id="total-item" class="h4">Total Item : 5</p>
           <p id="total-price" class="h4"></p>

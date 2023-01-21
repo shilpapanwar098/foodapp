@@ -188,17 +188,16 @@ function decrementItem() {
     decObj.quantity -= 1;
     decObj.price = currPrice * decObj.quantity;
   } else {
-    document.getElementById(decObj.id).classList.remove("addbutton");
     cartData.splice(ind, 1);
     document.getElementById("orderCount").innerText = cartData.length;
 
     if (cartData.length < 1 && flag) {
       alert("Currently no item in cart!");
-      document.getElementById("curries").classList.toggle("cardItem-toggle");
-      document.getElementById("rice").classList.toggle("cardItem-toggle");
-      document.getElementById("bread").classList.toggle("cardItem-toggle");
-      document.getElementById("cartDetails").classList.toggle("goBack");
-      document.getElementById("totalPayment").classList.toggle("goBack");
+      document.getElementById("curries").classList.toggle("display-none");
+      document.getElementById("rice").classList.toggle("display-none");
+      document.getElementById("bread").classList.toggle("display-none");
+      document.getElementById("cartDetails").classList.toggle("display-none");
+      document.getElementById("totalPayment").classList.toggle("display-none");
 
       flag = false;
     }
@@ -222,11 +221,11 @@ document.getElementById("orderCount").addEventListener("click", cartToggle);
 var flag = false;
 function cartToggle() {
   if (cartData.length > 0) {
-    document.getElementById("curries").classList.toggle("cart-toggle");
-    document.getElementById("rice").classList.toggle("cart-toggle");
-    document.getElementById("bread").classList.toggle("cart-toggle");
-    document.getElementById("cartDetails").classList.toggle("cardItem-toggle");
-    document.getElementById("totalPayment").classList.toggle("cardItem-toggle");
+    document.getElementById("curries").classList.toggle('display-none');
+    document.getElementById("rice").classList.toggle('display-none');
+    document.getElementById("bread").classList.toggle('display-none');
+    document.getElementById("cartDetails").classList.toggle('display-none');
+    document.getElementById("totalPayment").classList.toggle('display-none');
 
     flag = true;
   } else {
